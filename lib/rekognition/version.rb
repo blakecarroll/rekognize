@@ -1,3 +1,0 @@
-module Rekognition
-  VERSION = "0.0.1"
-end
