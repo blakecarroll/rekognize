@@ -6,11 +6,11 @@ require 'rekognition/version'
 Gem::Specification.new do |spec|
   spec.name          = "rekognition"
   spec.version       = Rekognition::VERSION
-  spec.authors       = ["TODO: Write your name"]
-  spec.email         = ["TODO: Write your email address"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.authors       = ["Dennis de Vulder"]
+  spec.email         = ["dennisdevulder@gmail.com"]
+  spec.description   = %q{Rekognition is library for Face and Recognition through Rekognition API}
+  spec.summary       = %q{TODO: Write gem summary}
+  spec.homepage      = "http://youfirst.nl"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
