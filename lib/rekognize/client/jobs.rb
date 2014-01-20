@@ -4,7 +4,7 @@ module Rekognize
 
       def face_detect(opts={})
         opts.assert_valid_keys(:jobs, :urls)
-        configure_payload(opts)
+        fire_request configure_payload(opts)
       end
 
     end
