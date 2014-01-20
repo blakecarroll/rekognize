@@ -8,6 +8,9 @@ module Rekognize
         BASE_URI + opts.to_params
       end
 
+      def fire_request(uri)
+        RestClient.get(uri)
+      end
     end
   end
 end
