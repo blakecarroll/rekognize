@@ -1,4 +1,3 @@
-require File.expand_path('../methods.rb', __FILE__)
 require File.expand_path('../endpoints.rb', __FILE__)
 require File.expand_path('../jobs.rb', __FILE__)
 
