@@ -8,7 +8,7 @@ module Rekognize
       end
 
       def face_add(opts={})
-        opts.assert_valid_keys(:jobs, :urls, :namespace, :user_id, :tag)
+        opts.assert_valid_keys(:jobs, :urls, :name_space, :user_id, :tag)
         post_request opts
       end
 
@@ -31,6 +31,12 @@ module Rekognize
         opts.assert_valid_keys(:jobs, :fb_id, :access_token, :name_space, :user_id)
         post_request opts
       end
+
+      def face_recognize(opts={})
+        opts.assert_valid_keys(:jobs, :urls, :name_space, :user_id, :num_return, :tags)
+        post_request opts
+      end
+
     end
   end
 end
