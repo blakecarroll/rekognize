@@ -21,6 +21,12 @@ module Rekognize
         opts.assert_valid_keys(:jobs, :name_space, :user_id, :tags)
         post_request opts
       end
+
+      def face_cluster(opts={})
+        opts.assert_valid_keys(:jobs, :name_space, :user_id, :aggressiveness)
+        post_request opts
+      end
+
     end
   end
 end
