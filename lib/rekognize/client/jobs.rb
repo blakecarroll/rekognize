@@ -37,6 +37,11 @@ module Rekognize
         post_request opts
       end
 
+      def face_visualize(opts={})
+        opts.assert_valid_keys(:jobs, :name_space, :user_id, :tags, :num_tag_return, :num_img_return_pertag)
+        post_request opts
+      end
+
     end
   end
 end
