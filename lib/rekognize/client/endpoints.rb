@@ -8,13 +8,11 @@ module Rekognize
       end
 
       def get_request(uri)
-         response = RestClient.get(uri)
-         parse ? JSON::parse(response) : response
+        JSON.parse RestClient.get(uri)
       end
 
       def post_request(opts)
-        response =  RestClient.post(base_uri, opts)
-        parse ? JSON::parse(response) : response
+        JSON.parse RestClient.post(base_uri, opts)
       end
     end
   end
