@@ -42,6 +42,11 @@ module Rekognize
         post_request opts
       end
 
+      def face_search(opts={})
+        opts.assert_valid_keys(:jobs, :urls, :name_space, :user_id, :num_return)
+        post_request opts
+      end
+
     end
   end
 end
