@@ -27,6 +27,10 @@ module Rekognize
         post_request opts
       end
 
+      def face_crawl(opts={})
+        opts.assert_valid_keys(:jobs, :fb_id, :access_token, :name_space, :user_id)
+        post_request opts
+      end
     end
   end
 end
