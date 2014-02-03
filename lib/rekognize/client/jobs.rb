@@ -57,6 +57,11 @@ module Rekognize
         post_request opts
       end
 
+      def scene_understanding(opts={})
+        opts.assert_valid_keys(:jobs, :urls)
+        post_request opts
+      end
+
     end
   end
 end
