@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = Rekognize::VERSION
   spec.authors       = ["Dennis de Vulder"]
   spec.email         = ["dennisdevulder@gmail.com"]
-  spec.description   = %q{description}
-  spec.summary       = %q{summary}
-  spec.homepage      = "http://youfirst.nl"
+  spec.description   = %q{}
+  spec.summary       = %q{Ruby wrapper of Rekognition Face and Scenery Detection and Recognition API}
+  spec.homepage      = "http://rubygems.org/gems/rekognize"
   spec.license       = "MIT"
 
   spec.files = Dir["README.md","Gemfile","Rakefile", "spec/*", "lib/**/*"]
