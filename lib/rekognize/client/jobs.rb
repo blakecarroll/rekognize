@@ -12,6 +12,11 @@ module Rekognize
         post_request opts
       end
 
+      def face_delete(opts={})
+        opts.assert_valid_keys(:jobs, :name_space, :user_id, :tag, :img_index)
+        get_request configure_payload(opts)
+      end
+
     end
   end
 end
