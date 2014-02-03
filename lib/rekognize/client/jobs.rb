@@ -47,6 +47,11 @@ module Rekognize
         post_request opts
       end
 
+      def face_rename(opts={})
+        opts.assert_valid_keys(:jobs, :tag, :new_tag, :name_space, :user_id, :img_index)
+        post_request opts
+      end
+
       def face_stats(opts={})
         opts.assert_valid_keys(:jobs)
         post_request opts
