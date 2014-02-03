@@ -1,5 +1,7 @@
 # Rekognize
 
+Sign up for your api credentials at: 'http://rekognition.com/user/create'
+
 ## Installation
 
 Add this line to your application's Gemfile:
