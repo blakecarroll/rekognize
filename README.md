@@ -1,6 +1,6 @@
 # Rekognize
 
-Sign up for your api credentials at: 'http://rekognition.com/user/create'
+Sign up for your api credentials at: http://rekognition.com/user/create
 
 ## Installation
 
@@ -26,7 +26,7 @@ Or install it yourself as:
     client.face_detect(urls: image_url/base64, jobs: 'face_detect')
 
 ## Methods
-For the official documentation please refer to: 'http://rekognition.com/developer/docs'
+For the official documentation please refer to: http://rekognition.com/developer/docs
 
     face_detect:
       required: [:jobs, :urls]
