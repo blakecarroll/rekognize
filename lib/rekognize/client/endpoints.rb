@@ -5,9 +5,12 @@ module Rekognize
         base_uri + opts.to_params
       end
 
-      def fire_request(uri, parse=true)
-        response = RestClient.get(uri)
-        parse ? JSON::parse(response) : response
+      def get_request(uri)
+         RestClient.get(uri)
+      end
+
+      def post_request(opts)
+        RestClient.post(base_uri, opts)
       end
     end
   end
