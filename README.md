@@ -1,7 +1,5 @@
 # Rekognize
 
-TODO: Write a gem description
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -18,12 +16,16 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    irb:
+    require 'rekognize'
+    >> true
 
-## Contributing
+    client = Rekognize::Client::Base.new(api_key: YOUR_API_KEY, api_secret: YOUR_API_SECRET)
+    client.face_detect(urls: image_url/base64, jobs: 'face_detect')
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+## Methods
+For the official documentation please refer to: 'http://rekognition.com/developer/docs'
+
+    face_detect:
+      required: [:jobs, :urls]
+ 
