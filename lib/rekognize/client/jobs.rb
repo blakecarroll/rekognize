@@ -17,6 +17,10 @@ module Rekognize
         get_request configure_payload(opts)
       end
 
+      def face_train(opts={})
+        opts.assert_valid_keys(:jobs, :name_space, :user_id, :tags)
+        post_request opts
+      end
     end
   end
 end
