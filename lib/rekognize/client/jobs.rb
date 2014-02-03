@@ -47,6 +47,11 @@ module Rekognize
         post_request opts
       end
 
+      def face_stats(opts={})
+        opts.assert_valid_keys(:jobs)
+        post_request opts
+      end
+
     end
   end
 end
