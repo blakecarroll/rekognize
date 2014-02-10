@@ -1,4 +1,5 @@
 require "rekognize/version"
+require 'rubygems'
 require 'rest-client'
 require 'json'
 
