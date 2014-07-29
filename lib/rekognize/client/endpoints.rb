@@ -2,8 +2,11 @@ module Rekognize
   module Client
     module Endpoints
 
+      def base_uri
+	"http://rekognition.com/func/api/?api_key=#{api_key}&api_secret=#{api_secret}"
+      end
+
       def configure_payload(opts={})
-        base_uri = "http://rekognition.com/func/api/?api_key=#{api_key}&api_secret=#{api_secret}"
         base_uri + opts.to_params
       end
 
