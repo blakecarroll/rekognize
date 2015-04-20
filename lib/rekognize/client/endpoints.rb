@@ -3,7 +3,7 @@ module Rekognize
     module Endpoints
 
       def base_uri
-	"http://rekognition.com/func/api/?api_key=#{api_key}&api_secret=#{api_secret}"
+      	"http://vip.rekognition.com/func/api/?api_key=#{api_key}&api_secret=#{api_secret}"
       end
 
       def configure_payload(opts={})
